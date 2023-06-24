@@ -1,0 +1,97 @@
+body{
+    background-color: rgba(4,29,29);
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 660px;
+    padding: 33px;
+    text-align: center;
+    background-color: white;
+    margin-left: 23%;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+.container h1 img{
+    width: 30px;
+    margin-left: 0px;
+}
+#input-box{
+    width: 270px;
+    padding: 8px;
+    border: 3px solid rgb(6,145,145);
+    outline: none;
+    border-radius: 8px;
+    font-size: 19px;
+    font-weight: bold;
+}
+#priority-select{
+    font-weight: bold;
+    border: 3px solid rgb(50, 49, 49);
+    height: 30px;
+}
+#date-input{
+    font-weight: bold;
+    border: 3px solid rgb(46, 37, 37);
+    height: 30px;
+}
+button{
+    width: 60px;
+    height: 41px;
+    background-color: rgb(4,29,29);
+    color:white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+    font-size: 19px;
+}
+ul li{
+    list-style: none;
+    font-size: 19px;
+    padding: 12px 8px 5px 50px ;
+    user-select: none;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+   
+}
+ul li:hover{
+    background: grey;
+    border: 2px solid black;
+    color: #edeef0;
+    border-radius: 10px;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background-image: url(https://cdn2.iconfinder.com/data/icons/user-interface-vol-2-14/48/radio-button-off-unchecked-round-circle-512.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 8px;
+}
+ul li.checked{
+    color: rgb(67, 60, 60);
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.FOvjyY-vs0XWnM9u5rv1TAHaHa&pid=Api&P=0&h=180);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px;
+    height:30px;
+    font-size: 22px;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+}
+ul li span:hover{
+    background: #cdcfd1;
+    border-radius: 25px;
+}
